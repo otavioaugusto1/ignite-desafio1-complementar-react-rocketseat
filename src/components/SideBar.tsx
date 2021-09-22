@@ -1,6 +1,7 @@
 import React from "react"
+import { Button } from "./Button"
 export function SideBar() {
-  
+
   return (
     <nav className="sidebar">
       <span>Watch<p>Me</p></span>
