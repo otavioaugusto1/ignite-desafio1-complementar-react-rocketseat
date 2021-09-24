@@ -1,6 +1,23 @@
 import React from "react"
 import { Button } from "./Button"
-export function SideBar() {
+
+interface SideBarProps{
+  genres: Array<{
+    id: number,
+    name: 'action' | 'comedy' | 'documentary' | 'drama' | 'horror' | 'family',
+    title: string
+  }>
+  selectedGenreId: number;
+  setSelectedGenreId: ( id: number) => void;
+
+}
+
+
+
+export function SideBar({genres, selectedGenreId, setSelectedGenreId}: SideBarProps) {
+  function handleClickButton(id:number){
+    setSelectedGenreId(id)
+  }
 
   return (
     <nav className="sidebar">

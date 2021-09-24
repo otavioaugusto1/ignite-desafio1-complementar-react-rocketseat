@@ -60,8 +60,8 @@ export function App() {
 
   return (
     <div style={{ display: 'flex', flexDirection: 'row' }}>
-      <SideBar/>
-      <Content/>
+      <SideBar key = {id}/>
+      <Content />
     </div>
   )
 }
