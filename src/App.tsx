@@ -60,8 +60,8 @@ export function App() {
 
   return (
     <div style={{ display: 'flex', flexDirection: 'row' }}>
-      <SideBar key = {id}/>
-      <Content />
+      <SideBar genres = {genres} selectedGenreId = {selectedGenreId} setSelectedGenreId = {setSelectedGenreId}/>
+      <Content movies = {movies} selectedGenre = {selectedGenre}/>
     </div>
   )
 }
